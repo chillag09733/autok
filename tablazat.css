@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    width: 900px;
+    height: fit-content;
+    padding-inline: 5rem;
+    display: block;
+    margin-inline: auto;
+  }
+  h1 {
+    color: #007f5f;
+    padding-block: 10px;
+  }
+  nav ul {
+    display: grid;
+    grid-template-columns: 6rem 13rem 7rem;
+    list-style-type: none;
+    padding: 10px;
+    background-color: #007f5f;
+    color: #d8f3dc;
+  }
+  tr img,
+  main .cars img {
+    width: 220px;
+    border: 1px solid lightgray;
+    padding: 2px;
+    border-radius: 5px;
+  }
+  .cars {
+    margin: 5px;
+  }
+  main {
+    display: grid;
+    grid-template-columns: auto 230px;
+  }
+  main p{
+      padding-left: 5px;
+      padding-top: 10px;
+  }
+  table {
+    border-collapse: collapse;
+    margin: 5px;
+    width: 95%;
+    overflow-x: auto;
+  }
+  tr,
+  td,
+  th {
+    text-align: left;
+    padding: 8px;
+  }
+  th{
+      border-bottom: 2px solid black;
+  }
+  td{
+      border-bottom: 1px solid grey;
+  }
+  tr:nth-child(even) {
+    background-color: #e9ecef;
+  }
+  
+  footer {
+    text-align: center;
+    padding-block: 10px;
+    color: #007f5f;
+  }
+  
+  @media screen and (max-width: 700px) {
+    body {
+      padding-inline: 1rem;
+      width: fit-content;
+    }
+    nav ul,
+    main {
+      grid-template-columns: 1fr;
+      max-width: 400px;
+    }
+  }
+  
